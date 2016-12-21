@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.derrick.fragments.PopularMoviesFragment">
+
+
+    <com.derrick.Widget.AutofitRecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:clipToPadding="false"
+        android:columnWidth="@dimen/column_width"
+        android:padding="@dimen/item_margin" />
+    <!-- TODO: Update blank fragment layout -->
+    <tr.xip.errorview.ErrorView
+        android:id="@+id/error_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        app:ev_retryButtonText="TRY AGAIN"
+        app:ev_retryButtonTextColor="@color/colorAccent"
+        app:ev_subtitle="Something went terribly wrong!" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

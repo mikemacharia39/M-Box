@@ -1,0 +1,60 @@
+package com.derrick.Utils;
+
+import android.content.Context;
+import android.support.v7.widget.RecyclerView;
+import android.util.Log;
+import android.view.GestureDetector;
+import android.view.MotionEvent;
+import android.view.View;
+
+/**
+ * Created by DERRICK on 5/23/2015.
+ */
+public class RecyclerViewListener implements RecyclerView.OnItemTouchListener{
+        private GestureDetector gestureDetector;
+        private ClickListener clickListener;
+        public RecyclerViewListener(Context context, final RecyclerView recyclerView1, final ClickListener clickListener){
+            this.clickListener=clickListener;
+            Log.d("mbox"," constructor invoked");
+            gestureDetector=new GestureDetector(context,new GestureDetector.SimpleOnGestureListener(){
+                @Override
+                public boolean onSingleTapUp(MotionEvent e) {
+                    Log.d("mbox","onSingleTapUp"+e);
+                    return true;
+
+                }
+
+                @Override
+                public void onLongPress(MotionEvent e) {
+                    Log.d("mbox","onLongPress"+e);
+                    View child=recyclerView1.findChildViewUnder(e.getX(),e.getY());
+                    if(child!=null && clickListener!=null ){
+                        clickListener.onLongClick(child,recyclerView1.getChildPosition(child));
+                    }
+
+                }
+            });
+        }
+
+        @Override
+        public boolean onInterceptTouchEvent(RecyclerView rv, MotionEvent e) {
+            Log.d("mbox", "onInterceptTouchEvent" + gestureDetector.onTouchEvent(e) + "" + e);
+            View child=rv.findChildViewUnder(e.getX(),e.getY());
+            if(child!=null && clickListener!=null && gestureDetector.onTouchEvent(e)){
+                clickListener.onClick(child,rv.getChildPosition(child));
+            }
+            return false;
+        }
+
+        @Override
+        public void onTouchEvent(RecyclerView rv, MotionEvent e) {
+            Log.d("mbox","onTouchEvent"+e);
+        }
+
+    @Override
+    public void onRequestDisallowInterceptTouchEvent(boolean disallowIntercept) {
+
+    }
+}
+
+

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/movie_details"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp">
+
+    <com.derrick.Widget.RobotoCondensedBold
+        android:id="@+id/Details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:text="Details"
+        android:textSize="24sp" />
+
+    <com.derrick.Widget.RobotoCondensedBold
+        android:id="@+id/released"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:paddingBottom="3dp"
+        android:layout_below="@+id/Details"
+        android:text="Released" />
+
+    <com.derrick.Widget.RobotoCondensedLight
+        android:id="@+id/releasedValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="3dp"
+        android:layout_below="@+id/Details"
+        android:text="Released" />
+
+    <com.derrick.Widget.RobotoCondensedBold
+        android:id="@+id/runtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:paddingBottom="3dp"
+        android:layout_below="@+id/released"
+        android:text="Runtime" />
+
+    <com.derrick.Widget.RobotoCondensedLight
+        android:id="@+id/runtimeValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="3dp"
+        android:layout_below="@+id/releasedValue"
+        android:text="Runtime" />
+
+    <com.derrick.Widget.RobotoCondensedBold
+        android:id="@+id/genre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:paddingBottom="3dp"
+        android:layout_below="@+id/runtime"
+        android:text="Genres" />
+
+    <com.derrick.Widget.RobotoCondensedLight
+        android:id="@+id/genreValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="3dp"
+        android:layout_below="@+id/runtimeValue"
+        android:text="Genres" />
+
+    <com.derrick.Widget.RobotoCondensedBold
+        android:id="@+id/budget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:paddingBottom="3dp"
+        android:layout_below="@+id/genre"
+        android:text="Budget" />
+
+    <com.derrick.Widget.RobotoCondensedLight
+        android:id="@+id/budgetValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="3dp"
+        android:layout_below="@+id/genreValue"
+        android:text="Budget" />
+
+    <com.derrick.Widget.RobotoCondensedBold
+        android:id="@+id/language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:paddingBottom="3dp"
+        android:layout_below="@+id/budget"
+        android:text="Language" />
+
+    <com.derrick.Widget.RobotoCondensedLight
+        android:id="@+id/languageValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="3dp"
+        android:layout_below="@+id/budgetValue"
+        android:text="Language" />
+</RelativeLayout>

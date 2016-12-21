@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_discover_fragment"
+            android:icon="@drawable/ic_btn_movie"
+            android:title="@string/discover" />
+        <item
+            android:id="@+id/nav_top_rated_fragment"
+            android:icon="@drawable/rating_star"
+            android:title="@string/top_rated" />
+        <item
+            android:id="@+id/nav_popular_actors_fragment"
+            android:icon="@drawable/ic_people"
+            android:title="@string/popular_actors" />
+        <item
+            android:id="@+id/nav_genres_fragment"
+            android:icon="@drawable/ic_filter_list"
+            android:title="@string/genres" />
+        <item android:title="@string/your_list">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:icon="@drawable/ic_favorite"
+                        android:title="@string/favourite" />
+                    <item
+                        android:icon="@drawable/ic_btn_watchlist"
+                        android:title="@string/watchlist" />
+                    <item
+                        android:icon="@drawable/ic_btn_seen"
+                        android:title="@string/watched" />
+                </group>
+            </menu>
+        </item>
+    </group>
+
+</menu>
