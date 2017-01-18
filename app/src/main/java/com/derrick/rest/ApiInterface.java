@@ -1,5 +1,6 @@
 package com.derrick.rest;
 
+import com.derrick.Utils.ApiKey;
 import com.derrick.models.MovieResponse;
 import com.derrick.models.MoviesDetails;
 
@@ -28,7 +29,7 @@ public interface ApiInterface {
     @GET("movie/upcoming")
     Call<MovieResponse> getUpcomingMoviesDetails(@Query("api_key") String apiKey, @Query("page") int page);
 
-    @GET("movie/{id}?api_key=bb7ce524c99f7a42c1f154f0a7b82d50&append_to_response=videos,credits,crew,similar")
+    @GET("movie/{id}?api_key=" + ApiKey.API_KEY + "&append_to_response=videos,credits,crew,similar")
     Call<MoviesDetails> getMovieDetails(@Path("id") int id);
 
 }
