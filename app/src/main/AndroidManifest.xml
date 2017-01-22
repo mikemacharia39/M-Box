@@ -5,13 +5,12 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
-
     <application
+        android:name="com.derrick.App.AppController"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:name="com.derrick.App.AppController"
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
@@ -30,8 +29,18 @@
 
         <activity
             android:name=".MovieDetailsActivity"
-            android:theme="@style/MAppTheme"></activity>
-        <activity android:name=".MoreCastCrewActivity"></activity>
+            android:theme="@style/MAppTheme" />
+        <activity android:name=".MoreCastCrewActivity" />
+        <activity
+            android:name=".AboutUsActivity"
+            android:label="@string/title_activity_about_us"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.derrick.movies.MainActivity" />
+        </activity>
+        <activity android:name=".LicenceActivity"></activity>
     </application>
 
 </manifest>

@@ -14,16 +14,16 @@
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
   -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_licence"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.derrick.movies.LicenceActivity">
 
-<resources>
-    <color name="colorPrimary">#03A9F4</color>
-    <color name="colorPrimaryDark">#0288D1</color>
-    <color name="colorAccent">#FF4081</color>
-    <color name="colorTransparent">#00FFFFFF</color>
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
 
-
-    <!-- tabs color-->
-    <color name="tabs_default">#D1ECFF</color>
-    <color name="colorWhite">#FFFFFF</color>
-    <color name="light_gray">#dddddd</color>
-</resources>
+</RelativeLayout>

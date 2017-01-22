@@ -1,3 +1,18 @@
+<!--
+  ~ Copyright 2016 Derrick Njeru
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~    http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
 <resources>
     <string name="app_name">M-Box</string>
     <string name="action_settings">Settings</string>
@@ -138,4 +153,12 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="see_more">See More</string>
+    <string name="caster_name">Cast Name</string>
+    <string name="role_name">Role Name</string>
+    <string name="title_activity_about_us">About Us</string>
+    <string name="about_open_source_title">Open-source licences</string>
+    <string name="about_open_source_content">Licence details for used open-source software</string>
+    <string name="about_powered_tmdb_title">Powered by TMDb</string>
+    <string name="about_powered_tmdb_content">This product uses the TMDb API but is not endorsed or certified by TMDb.</string>
+
 </resources>
