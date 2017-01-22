@@ -3,7 +3,7 @@ movie collection and information App (underdevelopment)
  
 **Home page:**             |  **Details page:**
 :-------------------------:|:-------------------------:
- <img src="https://github.com/DenHive/M-Box/blob/master/app/screenshots/popular.png" width="250">  |  <img src="https://github.com/DenHive/M-Box/blob/master/app/screenshots/moviedetails.png" width="250">
+ <img src="https://github.com/DenHive/M-Box/blob/master/app/screenshots/popular.png" width="500">  |  <img src="https://github.com/DenHive/M-Box/blob/master/app/screenshots/moviedetails.png" width="500">
 
 ## License
 
